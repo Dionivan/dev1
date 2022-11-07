@@ -1,72 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
 @font-face {
-    font-family: 'Saiya-sans';
-    src: url(Saiyan-Sans.ttf);
+    font-family: 'Saiyan-Sans';
+    src: url('Saiyan-Sans.ttf');
 }
-/*anular css navegador*/
-body{ 
+
+/* Marcação e Tags*/
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-/*marcadores ou tags*/
 p{
-    font-size: 12px;
+    font-size: 12px; 
     font-style: normal;
-    font-weight: 400; /*regular*/
+    font-weight: 400; /* Regular */
 }
-main h1{
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-main h2{
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-}
-/*classes e indentificações*/
+
+/* Classes e Identificações*/
 section#menu-principal{
-    background-color: #E55E2E;
-    color: white;
+    background-color: #e55e2e;
+    color: white; /*cor da fonte*/
     padding: 10px 20px;
     display: flex;
-    align-items: center;
+    align-items:center; /*Alinhamento vertical*/
     justify-content: space-between;
 }
+
 section#menu-principal>div{
     display: flex;
-    align-items: center;
+    align-items: center; /*Alinhamento vertical*/
 }
 section#menu-principal>div>span{
     margin-left: 13px;
-    font-family: 'Saiya-sans', serif;
+    font-family: 'Saiyan-Sans', serif;
     font-size: 20px;
 }
+
 section#menu-principal>nav>a:link,
 section#menu-principal>nav>a:visited{
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 10px;
 }
+
 nav#bread-crumb{
-    background-color: #fda402;
+    background-color: #c7b510;
     padding: 7px 10px;
     color: white;
+    font-weight: 600; /* Semibold */
 }
+
 nav#bread-crumb>a{
     color: white;
     text-decoration: none;
-    font-weight: 600;
 }
-nav#bread-crumb>span + span{
+nav#bread-crumb>span + span { 
     text-decoration: underline;
 }
+
 .banner{
     height: 300px;
     width: 100%;
     object-fit: cover;
+}
+
+main h1{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;  
+}
+
+main h2{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color:#7fcb07;
+    
+}
+
+main>div{
+    background-color: #7fcb07;
+    margin: 30px 20px;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+h1{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.card{
+    border-radius: 10px;
+    /*efeito de sombra*/
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    padding: 10px;
+}
+
+.card>h2{
+    color: #7fcb07;
+}
+
+footer{
+    background-color: #e55e2e;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+footer> p{
+    font-size: bold;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
 }
